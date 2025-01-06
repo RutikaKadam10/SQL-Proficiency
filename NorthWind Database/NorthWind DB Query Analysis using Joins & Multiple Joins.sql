@@ -1,5 +1,5 @@
 --Question 1. Orders table has order-level information but it doesn't have the customer name. Customer details are available in the customer table. To get the customer name, you need to join the table. Write a query to get order_id, customer_id and contact name (from customer_details)
---Expectated Output: order_id, customer_id, and contact name in exact same sequence. 
+--Expected Output: order_id, customer_id, and contact name in exact same sequence. 
 --Sort the output in ascending order of order-id
 select
 	o.order_id,
