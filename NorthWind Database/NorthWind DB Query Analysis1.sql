@@ -94,7 +94,7 @@ having count(product_id)>=6;
 --If the total quantity is greater than 200, label it as "High."
 --If the total quantity is between 100 and 200 (inclusive), label it as "Medium."
 --If the total quantity is less than 100, label it as "Low."
---Expectated Output: order ID, total quantity, and the classification for each order.
+--Expected Output: order ID, total quantity, and the classification for each order.
 select
 	o.order_id,
 	sum(od.quantity),
@@ -112,7 +112,7 @@ group by 1;
 --Question 12: Find the category with the least number of products.
 --Calculate the total number of products for each category.
 --Rank the categories based on the product count in ascending order.
---Expectated Output: category name, product count for the category ranked first (i.e., the category with the least products).
+--Expected Output: category name, product count for the category ranked first (i.e., the category with the least products).
 with number_of_products_per_cate as(
 	select
 		c.category_name,
